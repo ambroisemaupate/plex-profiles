@@ -10,3 +10,4 @@ On Linux: install/override profiles in `/usr/lib/plexmediaserver/Resources/Profi
 
 - https://developers.google.com/cast/docs/media#audio-codecs
 - https://forums.plex.tv/discussion/244663/chromecast-ultra-profile-doesnt-support-hevc/p2
+- https://www.reddit.com/r/PleX/comments/6nodo9/plex_keeps_transcoding_hvec_to_chromacast_ultra/
