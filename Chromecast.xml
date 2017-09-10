@@ -32,7 +32,12 @@
         <UpperBound name="video.bitrate" value="75000"/>
       </Limitations>
     </VideoCodec>
-    <VideoAudioCodec name="aac,mp3">
+    <VideoAudioCodec name="mp3">
+      <Limitations>
+        <UpperBound name="audio.channels" value="2" />
+      </Limitations>
+    </VideoAudioCodec>
+    <VideoAudioCodec name="aac">
       <Limitations>
         <UpperBound name="audio.channels" value="6" />
       </Limitations>
