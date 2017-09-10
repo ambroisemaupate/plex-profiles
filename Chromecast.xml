@@ -34,7 +34,7 @@
     </VideoCodec>
     <VideoAudioCodec name="aac,mp3">
       <Limitations>
-        <UpperBound name="audio.channels" value="2" />
+        <UpperBound name="audio.channels" value="6" />
       </Limitations>
     </VideoAudioCodec>
   </CodecProfiles>
