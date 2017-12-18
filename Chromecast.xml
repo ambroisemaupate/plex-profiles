@@ -10,9 +10,9 @@
   </TranscodeTargets>
   <DirectPlayProfiles>
     <VideoProfile container="mkv" codec="mpeg1video,mpeg2video,mpeg4,h264,vp8,vp9,Hevc,h265" audioCodec="ac3,dca,aac,mp2,mp3,pcm" subtitleFormat="srt,ass" />
-    <VideoProfile container="mp4,webm" codec="h264,mpeg4,Hevc,h265,vp8,vp9" audioCodec="ac3,aac,mp2,mp3" />
+    <VideoProfile container="mp4,webm" codec="h264,mpeg4,Hevc,h265,vp8,vp9" audioCodec="ac3,dca,aac,mp2,mp3,pcm" subtitleFormat="srt,ass" />
     <MusicProfile container="mp3" codec="mp2,mp3" />
-    <MusicProfile container="mp4" codec="aac" />
+    <MusicProfile container="mp4" codec="ac3,dca,aac,mp2,mp3,pcm" />
     <MusicProfile container="flac" codec="flac" />
     <MusicProfile container="ogg" codec="vorbis" />
     <PhotoProfile container="jpeg,gif,webp,png" />
@@ -20,19 +20,6 @@
     <SubtitleProfile container="srt" codec="srt" />
   </DirectPlayProfiles>
   <CodecProfiles>
-    <VideoCodec name="h265,Hevc,vp9">
-      <Limitations>
-        <UpperBound name="video.width" value="3840" />
-        <UpperBound name="video.height" value="2176" />
-        <UpperBound name="video.bitrate" value="75000"/>
-      </Limitations>
-    </VideoCodec>
-    <VideoCodec name="h264">
-      <Limitations>
-        <UpperBound name="video.bitDepth" value="8" />
-        <UpperBound name="video.level" value="42" />
-      </Limitations>
-    </VideoCodec>
     <VideoAudioCodec name="mp3">
       <Limitations>
         <UpperBound name="audio.channels" value="2" />
