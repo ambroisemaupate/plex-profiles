@@ -20,7 +20,27 @@
     <SubtitleProfile container="srt" codec="srt" />
   </DirectPlayProfiles>
   <CodecProfiles>
-    <VideoAudioCodec name="*">
+    <VideoAudioCodec name="mp3">
+      <Limitations>
+        <UpperBound name="audio.channels" value="2" />
+      </Limitations>
+    </VideoAudioCodec>
+    <VideoAudioCodec name="aac">
+      <Limitations>
+        <UpperBound name="audio.channels" value="2" />
+      </Limitations>
+    </VideoAudioCodec>
+    <VideoAudioCodec name="ac3">
+      <Limitations>
+        <UpperBound name="audio.channels" value="6" />
+      </Limitations>
+    </VideoAudioCodec>
+    <VideoAudioCodec name="eac3">
+      <Limitations>
+        <UpperBound name="audio.channels" value="6" />
+      </Limitations>
+    </VideoAudioCodec>
+    <VideoAudioCodec name="dca">
       <Limitations>
         <UpperBound name="audio.channels" value="6" />
       </Limitations>
