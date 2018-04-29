@@ -20,6 +20,14 @@
     <SubtitleProfile container="srt" codec="srt" />
   </DirectPlayProfiles>
   <CodecProfiles>
+    <VideoCodec name="h264">
+      <Limitations>
+        <UpperBound name="video.width" value="1920" isRequired="true" />
+        <UpperBound name="video.height" value="1080" isRequired="true" />
+        <UpperBound name="video.bitDepth" value="10" />
+        <UpperBound name="video.level" value="51" />
+      </Limitations>
+    </VideoCodec>
     <VideoAudioCodec name="mp3">
       <Limitations>
         <UpperBound name="audio.channels" value="2" />
