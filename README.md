@@ -1,6 +1,15 @@
 # Customized Plex media server profiles
 
-On Linux: install/override profiles in `/usr/lib/plexmediaserver/Resources/Profiles`
+- On Linux: install/override profiles in `/usr/lib/plexmediaserver/Resources/Profiles`     
+- On Synology: 
+
+```
+cd /volume1/@appstore/Plex Media Server/Resources/Profiles
+sudo rm Chromecast.xml
+sudo wget https://raw.githubusercontent.com/ambroisemaupate/plex-profiles/master/Chromecast.xml
+```
+
+Then restart your Plex service.
 
 - *Chromecast Ultra* profile :
    Allow HEVC, MKV with external subtitles to be *direct played*. Override `Chromecast.xml`, if any issue with subtitle
