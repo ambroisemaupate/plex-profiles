@@ -3,8 +3,8 @@
   <!-- Author: Plex Inc. -->
   <!-- Updated for Chromecast Ultra by ambroisemaupate. -->
   <TranscodeTargets>
-    <VideoProfile protocol="http" container="mkv" codec="h264,h265,Hevc" audioCodec="aac,mp3" context="streaming" />
-    <MusicProfile container="mkv" codec="aac" />
+    <VideoProfile protocol="http" container="mkv" codec="h264" audioCodec="aac,mp3" context="streaming" />
+    <MusicProfile container="mkv" codec="opus" />
     <PhotoProfile container="jpeg" />
     <SubtitleProfile container="ass" codec="ass" />
   </TranscodeTargets>
@@ -20,12 +20,20 @@
     <SubtitleProfile container="srt" codec="srt" />
   </DirectPlayProfiles>
   <CodecProfiles>
-    <VideoCodec name="h264">
+    <VideoCodec name="h265,Hevc,vp9">
       <Limitations>
-        <UpperBound name="video.width" value="1920" isRequired="true" />
-        <UpperBound name="video.height" value="1080" isRequired="true" />
-        <UpperBound name="video.bitDepth" value="10" />
-        <UpperBound name="video.level" value="51" />
+        <UpperBound name="video.width" value="3840"/>
+        <UpperBound name="video.height" value="2176"/>
+		    <UpperBound name="video.bitrate" value="75000"/>
+      </Limitations>
+    </VideoCodec>
+    <VideoCodec name="h264,mpeg4">
+      <Limitations>
+        <UpperBound name="video.width" value="3840"/>
+        <UpperBound name="video.height" value="2176"/>
+        <UpperBound name="video.bitrate" value="75000"/>
+		    <UpperBound name="video.bitDepth" value="10" />
+        <UpperBound name="video.level" value="42" />
       </Limitations>
     </VideoCodec>
     <VideoAudioCodec name="mp3">
